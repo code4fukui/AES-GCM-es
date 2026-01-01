@@ -1,7 +1,7 @@
-import forge from "https://taisukef.github.io/forge-es/lib/forge.js";
-import {} from "https://taisukef.github.io/forge-es/lib/aes.js";
-import {} from "https://taisukef.github.io/forge-es/lib/random.js";
-import { hex } from "https://code4sabae.github.io/js/hex.js";
+import forge from "https://code4fukui.github.io/forge-es/lib/forge.js";
+import {} from "https://code4fukui.github.io/forge-es/lib/aes.js";
+import {} from "https://code4fukui.github.io/forge-es/lib/random.js";
+import { Base16 } from "https://code4fukui.github.io/Base16/Base16.js";
 
 const array2s = (ar) => {
   const res = [];
@@ -56,7 +56,7 @@ class AESGCM {
     // outputs authentication tag
     console.log(tag.toHex());
     */
-    return [hex.toBin(encrypted.toHex()), hex.toBin(tag.toHex())];
+    return [Base16.decode(encrypted.toHex()), Base16.decode(tag.toHex())];
   }
   static decrypt(key, iv, data, tag) {
     const skey = array2s(key);
@@ -77,7 +77,7 @@ class AESGCM {
     }
     // outputs decrypted hex
     //console.log(decipher.output.toHex());
-    return hex.toBin(decipher.output.toHex());
+    return Base16.decode(decipher.output.toHex());
     //console.log(decipher.output.toString());
     //return s2array(decipher.output.toString());
   }
