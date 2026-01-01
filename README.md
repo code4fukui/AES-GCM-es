@@ -37,6 +37,12 @@ console.log(iv);
 }
 ```
 
+## test
+
+```sh
+deno test --allow-import=code4fukui.github.io,deno.land test.js
+```
+
 ## dependencies
 
 - [code4fukui/forge-es: A native implementation of TLS in Javascript and tools to write crypto-based and network-heavy webapps](https://github.com/taisukef/forge-es/)
