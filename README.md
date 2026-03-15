@@ -1,5 +1,7 @@
 # AES-GCM-es
 
+> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
+
 AES-GCM ES module for browsers and [Deno](https://deno.land/).
 
 ## Features

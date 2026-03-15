@@ -1,6 +1,6 @@
 # AES-GCM-es
 
-AES-GCMを使ったブラウザ向けとDeno向けのライブラリ。
+AES-GCMを使ったブラウザ向けとDeno向けのライブラリです。
 
 ## 機能
 - AES-GCMによる暗号化・復号機能
@@ -34,6 +34,14 @@ console.log(new TextDecoder().decode(dec));
 AESGCM.incrementIV(iv);
 console.log(iv);
 ```
+
+## テスト
+```sh
+deno test --allow-import=code4fukui.github.io,deno.land test.js
+```
+
+## 依存関係
+- [code4fukui/forge-es: A native implementation of TLS in Javascript and tools to write crypto-based and network-heavy webapps](https://github.com/taisukef/forge-es/)
 
 ## ライセンス
 MIT License
