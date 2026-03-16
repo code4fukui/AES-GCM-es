@@ -46,4 +46,4 @@ deno test --allow-import=code4fukui.github.io,deno.land test.js
 - [code4fukui/forge-es: A native implementation of TLS in Javascript and tools to write crypto-based and network-heavy webapps](https://github.com/taisukef/forge-es/)
 
 ## License
-MIT License
+MIT License — see [LICENSE](LICENSE).

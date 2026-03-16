@@ -1,6 +1,6 @@
 # AES-GCM-es
 
-AES-GCMを使ったブラウザ向けとDeno向けのライブラリです。
+ブラウザとDeno向けのAES-GCM暗号化ライブラリです。
 
 ## 機能
 - AES-GCMによる暗号化・復号機能
